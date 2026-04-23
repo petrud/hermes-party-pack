@@ -16,6 +16,9 @@ This folder contains the FOAM v0 module for Hermes-first public party delivery.
 - `cron.md`  
   Supporting/internal baseline heartbeat reference. Useful if cron is available, but not required for FOAM to work.
 
+- `fallback.md`  
+  Supporting/internal degraded fallback prompt. Use only if the skill file is missing/invalid.
+
 ## v0 philosophy
 
 FOAM v0 is built around the minimum reliable contract:
@@ -24,7 +27,16 @@ FOAM v0 is built around the minimum reliable contract:
 - pasteable activation prompt
 - pasteable comedown prompt
 
-Cron is supporting/internal, not the main public-facing artifact.
+Public-facing priority (recommended reading order):
+
+- `SKILL.md`
+- `activation.md`
+- `comedown.md`
+
+Supporting/internal artifacts:
+
+- `cron.md`
+- `fallback.md`
 
 ## Default cut
 

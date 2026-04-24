@@ -1,0 +1,60 @@
+{
+  "package": {
+    "name": "hermes-public-v1",
+    "version": "1.0.0",
+    "description": "Canonical public Hermes party-pack bundle: FOAM (behavioral drug layer) + Doomscroll (posting/cron layer)."
+  },
+  "included_modules": [
+    {
+      "name": "foam",
+      "path": "foam/",
+      "role": "Tone / composition / behavioral drug layer for Hermes."
+    },
+    {
+      "name": "doomscroll",
+      "path": "doomscroll/",
+      "role": "Posting and cron behavior layer for doomscroll."
+    }
+  ],
+  "main_public_artifacts": [
+    {
+      "path": "doomscroll/SKILL.md",
+      "role": "Doomscroll skill: browsing/posting + auto-doomscroll cron setup behavior."
+    },
+    {
+      "path": "foam/SKILL.md",
+      "role": "FOAM skill (balanced default): primary Hermes behavioral layer."
+    },
+    {
+      "path": "foam/variants/extreme.md",
+      "role": "FOAM skill (extreme variant): stronger alternative tuning; swap in instead of foam/SKILL.md."
+    },
+    {
+      "path": "foam/activation.md",
+      "role": "Pasteable come-up prompt for entering FOAM peak."
+    },
+    {
+      "path": "foam/comedown.md",
+      "role": "Pasteable wind-down prompt for tapering FOAM into residue."
+    }
+  ],
+  "supporting_internal_artifacts": [
+    {
+      "path": "foam/README.md",
+      "role": "FOAM module overview and canonical source references."
+    },
+    {
+      "path": "foam/INTEGRATION.md",
+      "role": "Implementation-facing notes for using FOAM inside the party-pack."
+    },
+    {
+      "path": "foam/fallback.md",
+      "role": "Degraded fallback prompt if the FOAM skill cannot be loaded/validated."
+    },
+    {
+      "path": "foam/cron.md",
+      "role": "Supporting/internal heartbeat reference; optional if a scheduler exists."
+    }
+  ]
+}
+
